@@ -1,0 +1,24 @@
+Suite/Test/Step Name,Browser,Description,Tag,Start time,End time,Duration,Status
+kompas,Chrome 120.0.0.0,Pengujian pada web kompas.com,,14-01-2024 12:29:44,14-01-2024 12:32:44,3m - 0.708s,PASSED
+,,,,,,,
+Test Cases/kompasLoginAndSearchNews,Chrome 120.0.0.0,,,14-01-2024 12:29:44,14-01-2024 12:32:28,2m - 43.470s,PASSED
+"openBrowser("""")",Chrome 120.0.0.0,,,14-01-2024 12:29:45,14-01-2024 12:29:49,4.132s,PASSED
+maximizeWindow(),Chrome 120.0.0.0,,,14-01-2024 12:29:49,14-01-2024 12:29:49,0.246s,PASSED
+"navigateToUrl(""https://www.kompas.com/"")",Chrome 120.0.0.0,,,14-01-2024 12:29:49,14-01-2024 12:30:04,14.777s,PASSED
+"click(findTestObject(""kompasLogin/halamanUtama/iconuser""))",Chrome 120.0.0.0,,,14-01-2024 12:30:04,14-01-2024 12:30:06,1.781s,PASSED
+"click(findTestObject(""kompasLogin/halamanUtama/span_Login (1)""))",Chrome 120.0.0.0,,,14-01-2024 12:30:06,14-01-2024 12:30:09,3.444s,PASSED
+"click(findTestObject(""kompasLogin/halamanLogin/input_KG Media ID_email""))",Chrome 120.0.0.0,,,14-01-2024 12:30:09,14-01-2024 12:30:10,1.130s,PASSED
+"setText(findTestObject(""kompasLogin/halamanLogin/input_KG Media ID_email""), ""faizoktarivandi@gmail.com"")",Chrome 120.0.0.0,,,14-01-2024 12:30:10,14-01-2024 12:30:12,1.270s,PASSED
+"click(findTestObject(""kompasLogin/halamanLogin/input_Password_password""))",Chrome 120.0.0.0,,,14-01-2024 12:30:12,14-01-2024 12:30:13,0.778s,PASSED
+"setEncryptedText(findTestObject(""kompasLogin/halamanLogin/input_Password_password""), ""2bZXWlVPxzLCSswz1LWJbQ=="")",Chrome 120.0.0.0,,,14-01-2024 12:30:13,14-01-2024 12:30:15,2.806s,PASSED
+"click(findTestObject(""Object Repository/kompasLogin/halamanLogin/input_button -primary""))",Chrome 120.0.0.0,,,14-01-2024 12:30:15,14-01-2024 12:30:20,5.119s,PASSED
+"click(findTestObject(""Object Repository/kompasLogin/halamanUtama/button_kgmModal-close""))",Chrome 120.0.0.0,,,14-01-2024 12:30:20,14-01-2024 12:30:50,29.188s,PASSED
+"setText(findTestObject(""Object Repository/kompasLogin/halamanUtama/input_q""), ""robot"")",Chrome 120.0.0.0,,,14-01-2024 12:30:50,14-01-2024 12:30:52,1.997s,PASSED
+"sendKeys(findTestObject(""Object Repository/kompasLogin/halamanUtama/input_q""), Keys.chord(ENTER))",Chrome 120.0.0.0,,,14-01-2024 12:30:52,14-01-2024 12:30:59,7.071s,PASSED
+"click(findTestObject(""kompasLogin/searchResult/searchResult1""))",Chrome 120.0.0.0,"Detect object diubah menjadi ke div(2), agar keyword apapun yang diinput tetap mengambil hasil kedua",,14-01-2024 12:30:59,14-01-2024 12:31:10,11.029s,PASSED
+takeFullPageScreenshot(),Chrome 120.0.0.0,,,14-01-2024 12:31:10,14-01-2024 12:31:54,44.550s,PASSED
+"scrollToElement(findTestObject(""kompasLogin/kompasArticle/endofArticle""), 0)",Chrome 120.0.0.0,,,14-01-2024 12:31:54,14-01-2024 12:31:55,0.559s,PASSED
+back(),Chrome 120.0.0.0,,,14-01-2024 12:31:55,14-01-2024 12:31:59,4.581s,PASSED
+"click(findTestObject(""kompasLogin/searchResult/searchResult2""))",Chrome 120.0.0.0,,,14-01-2024 12:31:59,14-01-2024 12:32:06,6.605s,PASSED
+takeFullPageScreenshot(),Chrome 120.0.0.0,,,14-01-2024 12:32:06,14-01-2024 12:32:25,18.921s,PASSED
+back(),Chrome 120.0.0.0,,,14-01-2024 12:32:25,14-01-2024 12:32:28,2.776s,PASSED

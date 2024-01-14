@@ -19,6 +19,8 @@ import org.openqa.selenium.Keys as Keys
 
 WebUI.openBrowser('')
 
+WebUI.maximizeWindow()
+
 WebUI.navigateToUrl('https://www.kompas.com/')
 
 WebUI.click(findTestObject('kompasLogin/halamanUtama/iconuser'))
@@ -37,10 +39,22 @@ WebUI.click(findTestObject('Object Repository/kompasLogin/halamanLogin/input_but
 
 WebUI.click(findTestObject('Object Repository/kompasLogin/halamanUtama/button_kgmModal-close'))
 
-WebUI.setText(findTestObject('Object Repository/kompasLogin/halamanUtama/input_q'), 'amerika')
+WebUI.setText(findTestObject('Object Repository/kompasLogin/halamanUtama/input_q'), 'robot')
 
 WebUI.sendKeys(findTestObject('Object Repository/kompasLogin/halamanUtama/input_q'), Keys.chord(Keys.ENTER))
 
 'Detect object diubah menjadi ke div(2), agar keyword apapun yang diinput tetap mengambil hasil kedua'
+WebUI.click(findTestObject('kompasLogin/searchResult/searchResult1'))
+
+WebUI.takeFullPageScreenshot()
+
+WebUI.scrollToElement(findTestObject('kompasLogin/kompasArticle/endofArticle'), 0)
+
+WebUI.back()
+
 WebUI.click(findTestObject('kompasLogin/searchResult/searchResult2'))
+
+WebUI.takeFullPageScreenshot()
+
+WebUI.back()
 
